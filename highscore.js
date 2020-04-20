@@ -1,7 +1,5 @@
 var myHighScores = JSON.parse(localStorage.getItem("scores") || "[]");
 
-console.log(myHighScores);
-
 for (var i = 0; i < myHighScores.length; i++) {
     var highScoreList = document.getElementById("high-scores-list");
     var newLi = document.createElement("li")
