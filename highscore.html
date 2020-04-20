@@ -16,30 +16,26 @@
         <div class="container navbar-container mx-0" style="max-width: none; padding-top: 10px;">
             <div class="row w-100">
                 <div class="col-4 col-md-2">
-                    <a type="button" id="highscore-button" class="btn btn-danger btn-lg" href="./index.html">Home</a>
+                    <a type="button" id="home-button" class="btn btn-danger btn-lg" href="./index.html">Go Back</a>
                 </div>
-                <div class="col-3 col-md-7"></div>
-                <div class="col-5 col-md-3">
-                    <form>
-                        <div class="form-group row">
-                            <label for="time-remaining" class="col-sm-7 col-form-label" style="color: white;">Time
-                                Remaining</label>
-                            <div class="col-sm-5">
-                                <input type="number" readonly class="form-control" id="time-remaining" placeholder="0">
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-3 col-md-7">
                 </div>
             </div>
         </div>
+        </div>
     </nav>
+
     <div class="container">
-        <div id="highscores" class="flex-center flex-column">
-            <h1 id="finalScore">High Scores</h1>
-            <ul id="highScoresList"></ul>
+        <div id="highscores" class="col-12 text-center" style="margin-top: 15px;">
+            <h1 id="final-score">High Scores</h1>
+            <ul id="high-scores-list"></ul>
+            <button id="clear-button" type="button" class="btn btn-outline-danger" style="margin-top: 40px;">Clear High
+                Scores</button>
         </div>
     </div>
-    <script src="assets/js/highscores.js"></script>
+
+    <script src="./highscore.js"></script>
+
 </body>
 
 </html>
